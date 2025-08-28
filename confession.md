@@ -70,7 +70,7 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
-  background: linear-gradient(135deg, #ffeef8 0%, #f0f8ff 100%);
+  background: url('/bg.png') center/cover no-repeat;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(255, 192, 203, 0.3);
   border: 2px solid #ffb6c1;
