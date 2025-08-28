@@ -1,4 +1,4 @@
-# Love Story
+# Our Story
 
 这里记录了我和小李同学的故事。
 

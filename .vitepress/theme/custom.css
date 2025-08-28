@@ -376,6 +376,22 @@ main {
   .VPDocFooter .prev-next {
     padding: 16px 0;
   }
+  
+  /* 移动端关于页面样式调整 */
+  .vp-doc .about-tags {
+    gap: 8px;
+  }
+  
+  .vp-doc .about-tags span {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+  
+  .vp-doc .content-card {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
 }
 
 /* 自定义容器样式 */
@@ -422,4 +438,36 @@ main {
 
 .VPDocFooter .pager-link .desc {
   color: #64748b !important;
+}
+
+/* 关于页面自定义样式 */
+.vp-doc .about-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.vp-doc .about-tags span {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.vp-doc .content-card {
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.vp-doc .content-card:hover {
+  background: #e9ecef;
+  transform: translateX(4px);
 }

@@ -20,7 +20,7 @@ export default defineConfig({
     logo: '/logo.png',
     nav: [
   { text: '简介', link: '/about' },
-  { text: 'Lnh&Wzq', link: '/love-record' },
+  { text: 'Our Story', link: '/love-record' },
   { text: '技术文章', link: '/redis-guide' }
     ],
 
@@ -42,7 +42,7 @@ export default defineConfig({
       {
         text: '生活随笔',
         items: [
-          { text: 'Love Story', link: '/love-record' }
+          { text: 'Our Story', link: '/love-record' }
         ]
       }
     ],
