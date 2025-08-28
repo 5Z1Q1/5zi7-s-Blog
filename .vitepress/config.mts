@@ -5,6 +5,15 @@ export default defineConfig({
   base: '/',
   title: "5zi7Blog",
   description: "This is wuziqi's personal blog.",
+  vite: {
+    css: {
+      preprocessorOptions: {}
+    },
+    build: {},
+  },
+  head: [
+    ["link", { rel: "stylesheet", href: "/custom-bg.css" }]
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
