@@ -22,29 +22,54 @@ body {
   z-index: 100;
 }
 
-/* 侧边栏小框样式 */
-.VPSidebar {
+/* 侧边栏小框样式 - 仅在有侧边栏时应用 */
+.VPDoc.has-sidebar .VPSidebar {
   width: 180px !important;
   min-width: 140px;
   max-width: 220px;
-  margin: 40px 0 0 40px !important;
+  margin: 120px 0 0 40px !important;
   padding: 18px 12px;
   background: rgba(255,255,255,0.6) !important;
   border-radius: 18px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-  backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
 }
 
+/* 主内容区样式 */
 .VPContent {
-  margin: 80px auto 32px auto;
+  margin: 120px auto 32px;
   max-width: 900px;
   padding: 32px 24px;
   background: rgba(255,255,255,0.75);
   border-radius: 24px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-  backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+/* 当有侧边栏时，调整主内容区的左边距 */
+.VPDoc.has-sidebar .VPContent {
+    margin-left: 260px; /* 侧边栏宽度 + 间距 */
+}
+
+/* 当没有侧边栏时，主内容区居中 */
+.VPDoc:not(.has-sidebar) .VPContent {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .VPDoc.has-sidebar .VPSidebar {
+    display: none; /* 在移动端隐藏桌面侧边栏 */
+  }
+  .VPDoc.has-sidebar .VPContent {
+    margin-left: auto; /* 移动端主内容区居中 */
+  }
 }
 
 .VPContent {
