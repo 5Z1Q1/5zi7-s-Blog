@@ -19,7 +19,7 @@
 ### 游戏世界
 
 - 🎲 **主修专业**：金铲铲
-- 🎯 **辅修课程**：云顶、农药、瓦罗兰特、瓦手游、三角洲
+- 🎯 **辅修课程**：云顶、农、瓦、瓦手游、三角洲
 - 🚗 **Steam 收藏**：Cities Skylines 1&2、地平线 4&5
 
 ## 📝 博客内容
@@ -50,7 +50,7 @@
 
 ## 🤝 联系方式
 
-想要交流或者有任何建议，欢迎通过以下方式联系我：
+想要交流或者有任何建议，欢迎通过以下方式联系我：1760353976@qq.com
 
 <div style="text-align: center; margin: 30px 0; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 12px; color: white;">
   <p style="margin: 0; font-size: 16px;">✨ 感谢你的访问，希望能在这里找到有趣的内容！</p>
