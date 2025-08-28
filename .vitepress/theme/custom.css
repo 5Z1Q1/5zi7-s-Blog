@@ -1,0 +1,425 @@
+/* 全局背景样式 */
+body {
+  background-image: url('/bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* 顶部导航栏样式 */
+.VPNav {
+  background: #F5F5F7;
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+.VPNavBar {
+  background: #F5F5F7;
+  border-radius: 0px;
+  box-shadow: none;
+  position: fixed;
+  z-index: 100;
+}
+
+/* Logo 样式调整 */
+.VPNavBarTitle .logo {
+  height: 32px;
+  width: auto;
+  margin-right: 12px;
+  border-radius: 4px;
+}
+
+.VPNavBarTitle .text {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.VPSidebar {
+  background: linear-gradient(to bottom, #F5F5F7, transparent) !important;
+  border-radius: 0px;
+  box-shadow: none;
+  position: fixed;
+}
+
+/* 强制侧边栏及其子元素背景透明 */
+.VPSidebar {
+  background: linear-gradient(to bottom, #F5F5F7, transparent) !important;
+  background-color: transparent !important;
+}
+
+/* 侧边栏导航元素透明背景 */
+.VPSidebar .nav, #VPSidebarNav, nav.nav {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* curtain 元素透明背景 */
+.VPSidebar .curtain, .curtain, .aside-curtain {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* 侧边栏项目背景透明 */
+.VPSidebar .VPSidebarItem, .VPSidebar .group, .VPSidebar .items {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* 侧边栏具体项目元素背景透明 */
+.VPSidebarItem.level-0, .VPSidebarItem.level-1, .VPSidebarItem .item {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* 强制所有侧边栏相关元素透明 */
+.group, .VPSidebarItem.level-0.has-active, .VPSidebarItem.level-1.is-link, 
+.VPSidebarItem.level-1.is-active.has-active {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* 导航栏标题背景透明 */
+.title, a.title {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* content-body 元素透明背景 */
+.content-body {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* 为导航栏和侧边栏文字添加阴影 */
+.VPNavBar .VPNavBarMenuLink, .VPNavBar .VPNavBarTitle .text, .VPSidebar .VPSidebarLink .text {
+  color: #000000ff;
+}
+
+/* 侧边栏字体大小和行距调整 */
+.VPSidebar .VPSidebarItem .text,
+.VPSidebar .VPSidebarItem a,
+.VPSidebar .VPSidebarLink,
+.VPSidebar .VPSidebarItem {
+  font-size: 16px !important;
+  line-height: 1.8 !important;
+  padding: 3px 0 !important;
+}
+
+/* 侧边栏组标题样式 */
+.VPSidebar .VPSidebarGroup .title {
+  font-size: 17px !important;
+  line-height: 2 !important;
+  padding: 12px 0 8px 0 !important;
+  font-weight: 600;
+}
+
+/* 侧边栏链接间距 */
+.VPSidebar .VPSidebarItem.level-0,
+.VPSidebar .VPSidebarItem.level-1 {
+  margin: 4px 0 !important;
+}
+
+/* 侧边栏整体内边距调整 */
+.VPSidebar .nav {
+  padding: 16px 24px !important;
+}
+
+/* 为内容区的文字添加阴影以提高可读性 */
+.VPContent, .VPContent p, .VPContent h1, .VPContent h2, .VPContent h3, .VPContent li, .VPContent a {
+  color: #000000ff;
+}
+
+/* 自定义 Markdown 内容样式 */
+
+/* 文章内容区域 */
+.vp-doc {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  padding: 24px 24px 40px 24px;
+  margin: 16px auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1400px;
+  width: calc(100% - 32px);
+}
+
+/* VitePress 内容容器调整 */
+.VPContent {
+  max-width: none !important;
+}
+
+/* 主要布局容器调整 */
+.VPDoc,
+.VPDoc .container,
+.VPContent .content,
+main {
+  max-width: 1800px !important;
+  margin: 0 auto;
+}
+
+/* Layout 主容器调整 */
+.Layout {
+  max-width: none !important;
+}
+
+/* 内容主区域调整 */
+.VPDoc .content {
+  max-width: 1400px !important;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.vp-doc .container,
+.vp-doc .content-container {
+  max-width: 1200px !important;
+  margin: 0 auto;
+}
+
+/* 标题样式 */
+.vp-doc h1 {
+  color: #2c3e50;
+  border-bottom: 2px solid #3eaf7c;
+  padding-bottom: 8px;
+  margin-top: 0;
+}
+
+.vp-doc h2 {
+  color: #2c3e50;
+  border-left: 4px solid #3eaf7c;
+  padding-left: 12px;
+  margin-top: 24px;
+}
+
+.vp-doc h3 {
+  color: #34495e;
+  margin-top: 20px;
+}
+
+/* 段落样式 */
+.vp-doc p {
+  line-height: 1.7;
+  color: #2c3e50;
+  margin: 12px 0;
+}
+
+/* 链接样式 */
+.vp-doc a {
+  color: #3eaf7c;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.vp-doc a:hover {
+  border-bottom-color: #3eaf7c;
+}
+
+/* 列表样式 */
+.vp-doc ul, .vp-doc ol {
+  color: #2c3e50;
+  padding-left: 20px;
+}
+
+.vp-doc li {
+  margin: 6px 0;
+}
+
+/* 代码块样式 */
+.vp-doc pre {
+  background: #f6f8fa;
+  border-radius: 6px;
+  padding: 16px;
+  overflow-x: auto;
+  border-left: 4px solid #3eaf7c;
+}
+
+.vp-doc code {
+  background: #f1f3f4;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+/* 引用块样式 */
+.vp-doc blockquote {
+  background: #f9f9f9;
+  border-left: 4px solid #ddd;
+  margin: 16px 0;
+  padding: 16px 20px;
+  color: #666;
+  font-style: italic;
+}
+
+/* 表格样式 */
+.vp-doc table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.vp-doc th, .vp-doc td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.vp-doc th {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* 图片样式 */
+.vp-doc img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 16px 0;
+}
+
+/* 分割线样式 */
+.vp-doc hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #3eaf7c, transparent);
+  margin: 24px 0;
+}
+
+/* 响应式设计 */
+@media (max-width: 1480px) {
+  .VPDoc,
+  .VPDoc .container,
+  .VPContent .content,
+  .VPDoc .content {
+    max-width: 1200px !important;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .VPDoc,
+  .VPDoc .container,
+  .VPContent .content,
+  .VPDoc .content {
+    max-width: 1000px !important;
+    padding: 0 16px;
+  }
+  
+  .vp-doc {
+    max-width: 1000px;
+    margin: 16px auto;
+    width: calc(100% - 32px);
+  }
+}
+
+@media (max-width: 960px) {
+  .VPDoc,
+  .VPDoc .container,
+  .VPContent .content,
+  .VPDoc .content {
+    max-width: 90% !important;
+    padding: 0 12px;
+  }
+  
+  .vp-doc {
+    max-width: 90%;
+    margin: 12px auto;
+    width: calc(100% - 24px);
+  }
+}
+
+@media (max-width: 768px) {
+  .VPDoc,
+  .VPDoc .container,
+  .VPContent .content,
+  .VPDoc .content {
+    max-width: 95% !important;
+    padding: 0 8px;
+  }
+  
+  .vp-doc {
+    margin: 8px auto;
+    padding: 16px 16px 32px 16px;
+    max-width: 95%;
+    width: calc(100% - 16px);
+  }
+  
+  .vp-doc h1 {
+    font-size: 1.8em;
+  }
+  
+  .vp-doc h2 {
+    font-size: 1.5em;
+  }
+  
+  /* 移动端 Logo 调整 */
+  .VPNavBarTitle .logo {
+    height: 28px;
+    margin-right: 8px;
+  }
+  
+  .VPNavBarTitle .text {
+    font-size: 16px;
+  }
+  
+  /* 移动端分页按钮调整 */
+  .VPDocFooter .pager-link {
+    padding: 12px 16px;
+    margin: 8px 0;
+  }
+  
+  .VPDocFooter .prev-next {
+    padding: 16px 0;
+  }
+}
+
+/* 自定义容器样式 */
+.custom-block.tip {
+  background: #f3f5f7;
+  border-left: 4px solid #42b883;
+}
+
+.custom-block.warning {
+  background: #fef7e6;
+  border-left: 4px solid #e6a23c;
+}
+
+.custom-block.danger {
+  background: #fef0f0;
+  border-left: 4px solid #f56c6c;
+}
+
+/* 分页按钮样式 */
+.VPDocFooter .prev-next {
+  padding: 24px 0;
+}
+
+.VPDocFooter .pager-link {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 16px 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.VPDocFooter .pager-link:hover {
+  background: rgba(255, 255, 255, 1) !important;
+  border-color: #3eaf7c;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}
+
+.VPDocFooter .pager-link .title {
+  color: #2c3e50 !important;
+  font-weight: 600;
+}
+
+.VPDocFooter .pager-link .desc {
+  color: #64748b !important;
+}
