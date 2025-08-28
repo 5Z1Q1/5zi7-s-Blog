@@ -14,7 +14,7 @@ export default defineConfig({
   head: [
     ["style", {}, `
       body {
-        background: #FFFFFF;
+        background-image: url('/bg.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
