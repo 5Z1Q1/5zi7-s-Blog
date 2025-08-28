@@ -13,7 +13,8 @@ export default defineConfig({
   },
   head: [
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' }],
-    ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    // 使用 logo.png 作为 favicon
+    ['link', { rel: 'icon', type: 'image/png', href: '/logo.png' }]
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
