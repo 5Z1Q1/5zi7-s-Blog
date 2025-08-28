@@ -37,7 +37,7 @@ export default defineConfig({
       }
 
       .VPSidebar {
-        background: #F5F5F7 !important;
+        background: linear-gradient(to bottom, #F5F5F7, transparent) !important;
         border-radius: 0px;
         box-shadow: none;
         position: fixed;
@@ -45,8 +45,8 @@ export default defineConfig({
 
       /* 强制侧边栏及其子元素背景透明 */
       .VPSidebar {
-        background: #F5F5F7 !important;
-        background-color: #F5F5F7 !important;
+        background: linear-gradient(to bottom, #F5F5F7, transparent) !important;
+        background-color: transparent !important;
       }
 
       /* 侧边栏导航元素透明背景 */
