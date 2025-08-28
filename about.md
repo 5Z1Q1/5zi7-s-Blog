@@ -9,7 +9,7 @@
 
 <div style="display: flex; flex-wrap: wrap; gap: 12px; margin: 20px 0;">
   <span style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 8px 16px; border-radius: 20px; font-size: 14px; font-weight: 500;">🧠 ESFJ</span>
-  <span style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 8px 16px; border-radius: 20px; font-size: 14px; font-weight: 500;">😴 懒癌晚期患者</span>
+  <span style="background: linear-gradient(135deg, #4facfe 0%, #2196f3 100%); color: white; padding: 8px 16px; border-radius: 20px; font-size: 14px; font-weight: 500;">😴 懒癌晚期患者</span>
   <span style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; padding: 8px 16px; border-radius: 20px; font-size: 14px; font-weight: 500;">🐛 先天bug圣体</span>
   <span style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); color: white; padding: 8px 16px; border-radius: 20px; font-size: 14px; font-weight: 500;">🧮 算法是学不会的</span>
 </div>
@@ -37,7 +37,7 @@
     <span><strong>生活感悟</strong> - 日常思考、人生体验、随想随记</span>
   </div>
   
-  <div style="display: flex; align-items: center; margin: 12px 0; padding: 12px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #f56c6c;">
+  <div style="display: flex; align-items: center; margin: 12px 0; padding: 12px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #4facfe;">
     <span style="margin-right: 12px;">📚</span>
     <span><strong>学习心得</strong> - 读书笔记、课程总结、知识分享</span>
   </div>
