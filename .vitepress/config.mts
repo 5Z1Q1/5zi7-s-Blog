@@ -19,13 +19,11 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/logo.png',
-    nav: [
+  nav: [
   { text: '简介', link: '/about' },
-  { text: 'Our Story', link: '/love-record' },
-  { text: '技术文章', link: '/redis-guide' }
-    ],
-
-    sidebar: [
+  { text: '技术文章', link: '/redis-guide' },
+  { text: 'Our Story', link: '/love-record' }
+  ],    sidebar: [
       {
         text: '首页',
         link: '/'

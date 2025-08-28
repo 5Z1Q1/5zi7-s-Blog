@@ -157,6 +157,63 @@ main {
   margin: 0 auto;
 }
 
+/* Our Story 导航按钮特别样式 */
+/* 多种选择器确保样式生效 */
+.VPNavBarMenuLink[href='/love-record'],
+.VPNav .VPNavBarMenuLink[href='/love-record'],
+a[href='/love-record'].VPNavBarMenuLink,
+.VPNavBar a[href='/love-record'] {
+  background: linear-gradient(90deg, #ffb6c1 0%, #ffe4e1 100%) !important;
+  color: #d6336c !important;
+  font-family: 'Brush Script MT', 'Comic Sans MS', 'Lucida Handwriting', cursive !important;
+  font-size: 18px !important;
+  font-weight: bold !important;
+  border-radius: 12px !important;
+  padding: 8px 16px !important;
+  margin: 0 4px !important;
+  box-shadow: 0 3px 12px rgba(255,182,193,0.4) !important;
+  transition: all 0.3s ease !important;
+  border: 2px solid rgba(255,182,193,0.3) !important;
+}
+
+.VPNavBarMenuLink[href='/love-record']:hover,
+.VPNav .VPNavBarMenuLink[href='/love-record']:hover,
+a[href='/love-record'].VPNavBarMenuLink:hover,
+.VPNavBar a[href='/love-record']:hover {
+  transform: scale(1.05) rotate(-1deg) !important;
+  background: linear-gradient(90deg, #ffe4e1 0%, #ffb6c1 100%) !important;
+  color: #ad1457 !important;
+  box-shadow: 0 5px 20px rgba(255,182,193,0.6) !important;
+  border-color: rgba(255,182,193,0.8) !important;
+}
+
+/* 额外的选择器，通过文本内容选中 Our Story */
+.VPNavBar a:has-text("Our Story"),
+.VPNavBar a[href*="love-record"],
+.VPNav a[href*="love-record"] {
+  background: linear-gradient(90deg, #ffb6c1 0%, #ffe4e1 100%) !important;
+  color: #d6336c !important;
+  font-family: 'Brush Script MT', 'Comic Sans MS', 'Lucida Handwriting', cursive !important;
+  font-size: 18px !important;
+  font-weight: bold !important;
+  border-radius: 12px !important;
+  padding: 8px 16px !important;
+  margin: 0 4px !important;
+  box-shadow: 0 3px 12px rgba(255,182,193,0.4) !important;
+  transition: all 0.3s ease !important;
+  border: 2px solid rgba(255,182,193,0.3) !important;
+}
+
+.VPNavBar a:has-text("Our Story"):hover,
+.VPNavBar a[href*="love-record"]:hover,
+.VPNav a[href*="love-record"]:hover {
+  transform: scale(1.05) rotate(-1deg) !important;
+  background: linear-gradient(90deg, #ffe4e1 0%, #ffb6c1 100%) !important;
+  color: #ad1457 !important;
+  box-shadow: 0 5px 20px rgba(255,182,193,0.6) !important;
+  border-color: rgba(255,182,193,0.8) !important;
+}
+
 /* Layout 主容器调整 */
 .Layout {
   max-width: none !important;
