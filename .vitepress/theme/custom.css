@@ -54,10 +54,23 @@ body {
   background-color: transparent !important;
 }
 
-/* curtain 元素透明背景 */
-.VPSidebar .curtain, .curtain, .aside-curtain {
+/* curtain 元素透明背景 - 更新版本 */
+.VPSidebar .curtain, .curtain {
   background: transparent !important;
   background-color: transparent !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+
+/* aside-curtain 元素完全隐藏 */
+.aside-curtain,
+.aside-curtain[data-v-e6f2a212],
+div[data-v-e6f2a212].aside-curtain,
+.aside-curtain[data-v-343c73d6],
+div[data-v-343c73d6].aside-curtain {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
 }
 
 /* 侧边栏项目背景透明 */
@@ -527,4 +540,170 @@ a[href='/love-record'].VPNavBarMenuLink:hover,
 .vp-doc .content-card:hover {
   background: #e9ecef;
   transform: translateX(4px);
+}
+
+/* 彻底隐藏 aside-curtain 元素 */
+.aside-curtain {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* 针对特定 data-v 属性的选择器 */
+div[data-v-e6f2a212].aside-curtain,
+[data-v-e6f2a212].aside-curtain {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  background: none !important;
+  background-color: transparent !important;
+}
+
+/* 右侧 aside 区域透明设置 - 针对 data-v-343c73d6 */
+.aside[data-v-343c73d6],
+div[data-v-343c73d6].aside,
+.aside-container[data-v-343c73d6],
+div[data-v-343c73d6].aside-container,
+.aside-content[data-v-343c73d6],
+div[data-v-343c73d6].aside-content {
+  background: transparent !important;
+  background-color: transparent !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+
+/* 专门隐藏 aside-curtain - data-v-343c73d6 版本 */
+.aside-curtain[data-v-343c73d6],
+div[data-v-343c73d6].aside-curtain {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+/* VPDocAside 相关元素透明设置 */
+.VPDocAside[data-v-d156f047],
+div[data-v-d156f047].VPDocAside,
+.VPDocAsideOutline[data-v-778bae50],
+nav[data-v-778bae50].VPDocAsideOutline {
+  background: transparent !important;
+  background-color: transparent !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+
+/* 通用 aside 和 outline 相关元素透明设置 */
+.aside, .aside-container, .aside-content,
+.VPDocAside, .VPDocAsideOutline, .VPDocOutlineItem {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* 终极隐藏规则 - 完全删除所有 aside-curtain 元素 */
+.aside-curtain,
+.aside-curtain[data-v-e6f2a212],
+div[data-v-e6f2a212].aside-curtain,
+.aside-curtain[data-v-343c73d6],
+div[data-v-343c73d6].aside-curtain,
+[class*="aside-curtain"],
+div[class*="aside-curtain"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  position: absolute !important;
+  left: -9999px !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  pointer-events: none !important;
+  z-index: -1 !important;
+  background: none !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  background-size: initial !important;
+  background-repeat: initial !important;
+  background-position: initial !important;
+  background-attachment: initial !important;
+  background-origin: initial !important;
+  -webkit-background-clip: initial !important;
+  background-clip: initial !important;
+  background-blend-mode: initial !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+
+/* 超强力规则 - 彻底清除任何可能的 aside-curtain 渐变背景 */
+*[class*="aside-curtain"],
+*[class="aside-curtain"],
+div.aside-curtain,
+.aside .aside-curtain,
+.aside-container .aside-curtain {
+  background: none !important;
+  background-image: none !important;
+  background-color: transparent !important;
+  background: transparent !important;
+  background-size: 0 !important;
+  background-repeat: no-repeat !important;
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  left: -99999px !important;
+  top: -99999px !important;
+  z-index: -9999 !important;
+  pointer-events: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+/* 最终解决方案 - 使用CSS内容替换和伪元素覆盖 */
+.aside-curtain::before,
+.aside-curtain::after,
+*[class*="aside-curtain"]::before,
+*[class*="aside-curtain"]::after {
+  content: "" !important;
+  display: none !important;
+}
+
+/* 使用content属性强制清空元素内容 */
+.aside-curtain,
+*[class*="aside-curtain"] {
+  content: "" !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+  text-indent: -9999px !important;
+}
+
+/* 最暴力的方法 - 使用transform使其完全不可见 */
+html .aside-curtain,
+html *[class*="aside-curtain"],
+body .aside-curtain,
+body *[class*="aside-curtain"],
+.aside .aside-curtain,
+div.aside-curtain {
+  -webkit-transform: scale(0) !important;
+  -moz-transform: scale(0) !important;
+  -ms-transform: scale(0) !important;
+  transform: scale(0) !important;
+  -webkit-transform-origin: 0 0 !important;
+  transform-origin: 0 0 !important;
+  max-width: 0 !important;
+  max-height: 0 !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
 }

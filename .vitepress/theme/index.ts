@@ -93,10 +93,60 @@ export default {
         }, 100);
       };
 
+      // 强制删除 aside-curtain 元素的函数
+      const removeAsideCurtain = () => {
+        // 查找所有 aside-curtain 元素
+        const curtainElements = document.querySelectorAll(
+          '.aside-curtain, [class*="aside-curtain"], div[data-v-343c73d6].aside-curtain'
+        );
+        
+        curtainElements.forEach(element => {
+          if (element && element instanceof HTMLElement) {
+            // 多种删除方法
+            element.remove(); // 直接删除
+            element.style.display = 'none'; // 隐藏
+            element.style.visibility = 'hidden'; // 不可见
+            element.style.opacity = '0'; // 透明
+            element.style.height = '0'; // 高度为0
+            element.style.width = '0'; // 宽度为0
+            element.style.overflow = 'hidden'; // 隐藏溢出
+            element.style.position = 'absolute'; // 绝对定位
+            element.style.left = '-9999px'; // 移出屏幕
+            element.style.zIndex = '-9999'; // 置于底层
+            
+            // 清除所有背景
+            element.style.background = 'none';
+            element.style.backgroundImage = 'none';
+            element.style.backgroundColor = 'transparent';
+            
+            console.log('Removed aside-curtain element:', element);
+          }
+        });
+      };
+
+      // 页面加载完成后删除
+      const observer = new MutationObserver(() => {
+        removeAsideCurtain();
+      });
+
+      // 监听DOM变化
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true
+      });
+
       // 初始页面加载
       setTimeout(() => {
         applyOurStoryStyle();
+        removeAsideCurtain(); // 删除 aside-curtain
       }, 500);
+
+      // 路由变化时也删除
+      router.afterEach(() => {
+        setTimeout(() => {
+          removeAsideCurtain();
+        }, 100);
+      });
     }
   }
 }
